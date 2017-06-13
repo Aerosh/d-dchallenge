@@ -19,7 +19,7 @@ lenet                       :  Contain code
 ----LogisticRegression.py   :  Logistic Regression class
 ----Lenet5.py               :  Lenet5 model construction
 ----input_pipeline.py       :  Dataset loading/downloading and data augmentation
-----train.py                :  Main run script to train/valid/test dataset with ogiven model
+----train.py                :  Main run script to train/valid/test dataset with given model
 environment.yml             :  Virtual conda environment used
 ```
 
@@ -81,18 +81,18 @@ I decided to go step by step instead of directly apply Lenet5 model on CIFAR 10.
 
 Then, I upgraded with a simple MLP with a single Hidden layer. I saw how elements were put together and which elements were essential. I also took some times to go through some reading on Theano documentation and understand its basic concepts.
 
-The next step was the implementation of multiple convolutional layer with Lenet. It was an upgrade of the previous MLP, following nearly the same procesure, with a bit more of OOP involved. 
+The next step was the implementation of multiple convolutional layers with Lenet. It was an upgrade of the previous MLP, following nearly the same procedure, with a bit more of parameters involved. 
 
-With this base architecture and understanding of Theano, I changed the structure to something I though was more clear and more easy to debug and improve. I tried to make things less dependant on values and more reliable on user input.
+With this base architecture and understanding of Theano, I changed the structure to something I though was more clear and more easy to debug and improve. I tried to make things less dependant on values and more reliable on user input. My desire was to make this project more modular.
 
-For the improvements and changes asked, I tried myself and started to look at some answers available on forums. I also find multiple github repositories with some theano code to validate my choices or to help into understanding even further.
+For the improvements and changes asked, I tried myself with the documentation and started to look at some answers available on forums. I also find multiple github repositories with some theano code to validate my choices or to help into understanding even further.
 
 Finally, I was also inspired by some paper, such as AlexNet, ResNet or LeNet5 for some intuition on data augmentation and architecture construction.
 
 ## Further improvements
 (Suggestions)
 ### Dropout
-Dropout is a common techniques is more recent CNN architectures. It has proven its efficiency to avoid overfitting by randomly remove a portion of the output data.
+Dropout is a common technique in recent CNN architectures. It has proven its efficiency to avoid overfitting.
 
 ### Batch Normalization
-Batch Normalization enable a normalization among layers and batches. It speed up computation and guarantee some uniform processing of the data
+Batch Normalization enable a normalization among layers and batches. It speed up computation and brought some improvement in term of training time.
