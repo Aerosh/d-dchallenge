@@ -1,4 +1,4 @@
-#Custom Lenet CNN for image classification
+# Custom Lenet CNN for image classification
 
 ## Description
 Fully Lenet implementation for MNIST and CIFAR10 in Theano with Python 3.
@@ -10,17 +10,17 @@ Specifications :
 * Data augmentation : Random Cropping with horizontal rotation
 * Regularization : L2
 
-## Structure
+## Structure
 
 ```
-data						:			Store dataset
-lenet						:			Contrain code
-----Layer.py				:			Layer type classes
-----LogisticRegression.py	:			Logistic Regression class
-----Lenet5.py				:			Lenet5 model construction
-----input_pipeline.py		:			Dataset loading/downloading and data augmentation
-----train.py				:			Main run script to train/valid/test dataset with ogiven model
-environment.yml				:			Virtual conda environment used
+data                        :  Store dataset
+lenet                       :  Contain code
+----Layer.py                :  Layer type classes
+----LogisticRegression.py   :  Logistic Regression class
+----Lenet5.py               :  Lenet5 model construction
+----input_pipeline.py       :  Dataset loading/downloading and data augmentation
+----train.py                :  Main run script to train/valid/test dataset with ogiven model
+environment.yml             :  Virtual conda environment used
 ```
 
 The code structure was made for an easy readability and an ease to expand to other model or other datasets. Mostly, group of utility function or classes have been regroup insto same python file.
