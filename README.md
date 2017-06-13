@@ -1,7 +1,8 @@
 # Custom Lenet CNN for image classification
 
 ## Description
-Fully Lenet implementation for MNIST and CIFAR10 in Theano with Python 3.
+Fully Lenet implementation for MNIST and CIFAR10 in Theano with Python 3. 
+
 Specifications :
 
 * Depth : 5
@@ -9,6 +10,8 @@ Specifications :
 * Activations : ReLu
 * Data augmentation : Random Cropping with horizontal rotation
 * Regularization : L2
+
+NOTE : The code was tested with CPU only computation. However, the code is really similar to GPU ones and one could test it by changing the config parameters on train.py
 
 ## Structure
 
